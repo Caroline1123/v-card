@@ -7,15 +7,66 @@ body {
     height: 100vh;
     background : linear-gradient(
         to bottom,
-        blue 0%,
-        blue 40%,
+        transparent 0%,
+        transparent 40%,
         white 40%,
         white 100%
-    );
+    ),
+    url('./static/grey_wash_wall.png');
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .flex_container {
     display:flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    color: white;
+    
 }
 
+.image_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+img {
+    object-fit: cover;
+    max-width: 60%;
+    background-color: white;
+    border-radius:50%;
+}
+
+.my_info {
+    flex:2;
+    color:white;
+    text-align:center;
+    padding-right: 600px;
+    font-weight:lighter;
+}
+
+.my_info > h1 {
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size:40px;
+}
+
+.job {
+    font-size:24px;
+}
+
+.contact { 
+    display: flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.contact a {
+    display: inline-block;
+    align-items: center;
+    overflow: hidden;
+    filter: invert(100%);
+}
