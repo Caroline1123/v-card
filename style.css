@@ -140,6 +140,24 @@ em {
     flex: 2;
     text-align: left;
 }
+#resume {
+    display:block;
+    margin: auto;
+    padding:10px 10px;
+    font-weight:light;
+    border:none;
+    color:white;
+    font-weight:bold;
+    font-size:1em;
+    background-color:#5199e4;
+}
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    font-size:1.2em;
+}
 
 footer {
     height:10%;
